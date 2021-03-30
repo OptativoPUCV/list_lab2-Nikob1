@@ -104,6 +104,13 @@ void pushCurrent(List * list, const void * data) {
         aux->prev=list->current;
         list->current->next=aux;
         list->tail=aux;
+      }else{
+        aux=nodo;
+        aux=list->current;
+        list->current->next=nodo;
+        nodo->prev=aux;
+        aux->next->prev=nodo;
+        
       }
 
     }
