@@ -1,0 +1,212 @@
+Tue Mar 30 16:28:54 UTC 2021: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:6: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+      list->head=NULL;
+      ^~~~
+      List
+list.c:32:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c:36:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:37:21 UTC 2021: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->head=NULL;
+          ^~
+list.c:33:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->tail=NULL;
+          ^~
+list.c:34:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->current=NULL;
+          ^~
+list.c:35:13: error: incompatible types when returning type ‘struct List’ but ‘List * {aka struct List *}’ was expected
+      return list;
+             ^~~~
+list.c:36:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:37:24 UTC 2021: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->head=NULL;
+          ^~
+list.c:33:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->tail=NULL;
+          ^~
+list.c:34:10: error: invalid type argument of ‘->’ (have ‘struct List’)
+      list->current=NULL;
+          ^~
+list.c:35:13: error: incompatible types when returning type ‘struct List’ but ‘List * {aka struct List *}’ was expected
+      return list;
+             ^~~~
+list.c:36:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:37:28 UTC 2021: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:6: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+      list->head=NULL;
+      ^~~~
+      List
+list.c:32:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c:36:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:37:42 UTC 2021: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+list.c:35:13: error: expected expression before ‘List’
+      return List;
+             ^~~~
+list.c:36:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:38:33 UTC 2021: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:35:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+list.c:37:13: error: expected expression before ‘List’
+      return List;
+             ^~~~
+list.c:38:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:38:34 UTC 2021: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:35:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+list.c:37:13: error: expected expression before ‘List’
+      return List;
+             ^~~~
+list.c:38:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+Tue Mar 30 16:41:38 UTC 2021: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+Compilation failed
+Tue Mar 30 16:55:46 UTC 2021: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:7: error: expected identifier or ‘(’ before ‘=’ token
+   List=(List*)malloc(sizeof(List))
+       ^
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:35:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+Compilation failed
+Tue Mar 30 16:55:51 UTC 2021: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:7: error: expected identifier or ‘(’ before ‘=’ token
+   List=(List*)malloc(sizeof(List));
+       ^
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:35:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+Compilation failed
+Tue Mar 30 16:55:54 UTC 2021: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:32:7: error: expected identifier or ‘(’ before ‘=’ token
+   List=(List*)malloc(sizeof(List));
+       ^
+list.c:33:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->head=NULL;
+          ^~
+list.c:34:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->tail=NULL;
+          ^~
+list.c:35:10: error: expected identifier or ‘(’ before ‘->’ token
+      List->current=NULL;
+          ^~
+Compilation failed
+Tue Mar 30 17:14:42 UTC 2021: 
+ list.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+fbc4f99
