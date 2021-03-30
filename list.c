@@ -138,8 +138,19 @@ void * popCurrent(List * list) {
     list->current->next=NULL;
     list->current->prev=nodo;
     nodo->next=list->current;
-
   }
+  if(list->current->prev==NULL){
+    nodo=list->current->next->next;
+    list->current=list->current->next;
+    list->current->next=nodo;
+    nodo->prev=list->current;
+  }else{
+    nodo=list->current->prev;
+    list->current=list->current->next;
+    list->current->prev=nodo;
+    nodo->next=list->current;
+  }
+  
 
     return NULL;
 }
