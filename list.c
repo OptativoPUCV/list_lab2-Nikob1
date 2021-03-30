@@ -127,35 +127,25 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node* aux;
-  Node* aux1;
-  aux1=list->current;
-  if(!list->current){
-  return NULL;
+  Node * nodo_eliminar = list->current;
+  if(!nodo_eliminar)  return NULL;
+  else if(!nodo_eliminar->next){
+    list->tail = nodo_eliminar->prev;
+    list->current = nodo_eliminar->prev;
+    nodo_eliminar->prev->next = NULL;
   }
-  if(list->current->next==NULL){
-    
-    list->current=aux1->prev;
-    aux1->prev->next=NULL;
-    list->tail=aux1->prev;
-
+  else if(!nodo_eliminar->prev){
+    list->head = nodo_eliminar->next;
+    list->current = nodo_eliminar->next;
+    nodo_eliminar->next->prev = NULL;
   }
-  if(list->current->prev==NULL){
-   
-    list->current=aux1->next;
-    aux1->next->prev=NULL;
-    list->head=aux1->next;
-
-  }else{
-    
-    list->current=aux1->next;
-    aux=aux1->prev;
-    aux->next=aux1->next;
-    aux1->next->prev=aux;
+  else{
+    list->current=nodo_eliminar->next;
+    Node * nodo_anterior = nodo_eliminar->prev;
+    nodo_anterior->next = nodo_eliminar->next;
+    nodo_eliminar->next->prev = nodo_anterior;
   }
-  
-
-    return (void*)aux1->data;
+  return (void *)nodo_eliminar->data;
 }
 
 void cleanList(List * list) {
