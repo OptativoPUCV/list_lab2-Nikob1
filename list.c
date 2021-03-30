@@ -109,7 +109,6 @@ void pushCurrent(List * list, const void * data) {
         aux=list->current;
         list->current->next=nodo;
         nodo->prev=aux;
-        aux->next->prev=nodo;
         
       }
 
