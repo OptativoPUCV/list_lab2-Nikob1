@@ -130,8 +130,6 @@ void * popCurrent(List * list) {
   Node *aux;
   aux=list->current;
   Node *aux1;
-  Node *aux2;
-  aux2=list->current;
   if(!list->current)return NULL;
   if(!aux->next){
     list->tail=aux->prev;
@@ -149,7 +147,7 @@ void * popCurrent(List * list) {
     aux1->next=aux->next;
     aux->next->prev=aux1;
   }
-  return (void*)aux2->data;
+  return (void*)aux->data;
 }
 
 void cleanList(List * list) {
