@@ -127,6 +127,20 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  Node* nodo;
+  nodo=createNode(NULL);
+  if(!list->current){
+  return NULL;
+  }
+  if(list->current->next==NULL){
+    nodo=list->current->prev->prev;
+    list->current->prev=list->current;
+    list->current->next=NULL;
+    list->current->prev=nodo;
+    nodo->next=list->current;
+
+  }
+
     return NULL;
 }
 
